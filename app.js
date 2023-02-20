@@ -6,6 +6,6 @@ nextBtn.onclick = () => {
   slider.scrollLeft += width
 }
 prevBtn.onclick = () => {
-  console.log(2);
+  
   slider.scrollLeft -= width
 }

@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,7 @@ a {
 ul {
   list-style: none;
 }
-img{
+img {
   max-width: 100%;
 }
 
@@ -145,7 +144,7 @@ img{
     top: 0;
     bottom: 0;
     width: 5%;
-    left: 703px;
+    left: 70%;
     width: 100%;
     &-img {
       width: 100%;
@@ -255,7 +254,11 @@ img{
   ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 68px;
+    li {
+      font-size: 22px;
+      line-height: 24px;
+    }
     .dropdown {
       display: flex;
       align-items: center;
@@ -265,11 +268,11 @@ img{
       z-index: 99;
       .sub-dropdown {
         position: absolute;
-        top: 30px;
+        top: 40px;
         transition: 0.2s ease;
         height: fit-content;
         left: 0;
-        width: 80px;
+        width: 150px;
         display: flex;
         opacity: 0;
         flex-direction: column;
@@ -278,7 +281,7 @@ img{
         font-weight: 400;
         background-color: #fff;
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 20px 10px;
         padding-right: 30px;
         gap: 10px;
 
@@ -427,13 +430,15 @@ img{
     gap: 33px;
     margin-top: 34px;
     .item {
-      width: calc(20% - 12px);
+      width: calc(20% - 33px);
       img {
+        width: 100%;
         max-width: 100%;
       }
       .name {
         margin-top: 14px;
         font-size: 20px;
+        line-height: 28px;
       }
       .prices {
         justify-content: space-between;
@@ -443,9 +448,17 @@ img{
       }
       .price {
         font-size: 20px;
+        line-height: 28px;
         font-weight: 600;
       }
+      .contact {
+        color: #0184d3;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
       .old-price {
+        line-height: 28px;
         text-decoration: line-through;
         font-size: 14px;
         color: #959ead;
@@ -453,7 +466,7 @@ img{
     }
   }
 }
-.arrow-btn{
+.arrow-btn {
   display: flex;
   align-items: center;
   z-index: 99;
@@ -462,8 +475,7 @@ img{
   color: #8bc63f;
   cursor: pointer;
 }
-.slider{
- 
+.slider {
   display: flex;
   overflow: scroll;
   gap: 20px;
@@ -473,13 +485,12 @@ img{
   .item {
     width: 15%;
     flex: none;
-    img{
-       max-width: 100%;
+    img {
+      max-width: 100%;
     }
   }
-
 }
-.slider::-webkit-scrollbar{
+.slider::-webkit-scrollbar {
   display: none;
 }
 
@@ -513,9 +524,9 @@ img{
       font-size: 20px;
       margin-left: 30px;
     }
-    .bamboo-right {
+    /* .bamboo-right {
       left: 300px;
-    }
+    } */
   }
 
   .header {
@@ -536,6 +547,11 @@ img{
       }
     }
   }
+  .slider {
+    .item {
+      width: 30%;
+    }
+  }
   .section-title {
     h1 {
       font-size: 18px;
@@ -546,14 +562,16 @@ img{
   }
   .content {
     .list {
+      gap: 20px;
+      column-gap: 20px;
       justify-content: space-between;
       .item {
         width: 45%;
         .price {
-          font-size: 12px;
+          font-size: 10px;
         }
         .old-price {
-          font-size: 10px;
+          font-size: 8px;
         }
         .name {
           font-size: 15px;
@@ -577,18 +595,23 @@ img{
         width: 100%;
         max-width: 100%;
       }
-      .logo-list{
+      .logo-list {
         flex-wrap: wrap;
         justify-content: center;
       }
-      .right{
+      .right {
         display: flex;
         flex-direction: column;
         gap: 20px;
       }
-      .d-flex{
+      .d-flex {
         width: 100%;
       }
+    }
+  }
+  .categories {
+    ul {
+      gap: 8px;
     }
   }
 }
@@ -602,8 +625,9 @@ img{
     .more {
       font-size: 18px;
     }
-  }.header{
-    .btns-wrap{
+  }
+  .header {
+    .btns-wrap {
       gap: 18px;
     }
   }
@@ -634,18 +658,19 @@ img{
   }
   .banner {
     &-heading {
-        margin-left: 140px;
+      margin-left: 84px;
       font-size: 35px;
     }
-    .bamboo-right{
+    /* .bamboo-right{
         left: 580px;
-    }
+    } */
   }
-  .categories{
-    ul{
-        li{
-            font-size: 13px;
-        }
+  .categories {
+    ul {
+      gap: 15px;
+      li {
+        font-size: 13px;
+      }
     }
   }
   .footer {
@@ -660,7 +685,6 @@ img{
       }
     }
   }
-
 }
 
 /* mobile & tablet */
@@ -672,7 +696,6 @@ img{
       width: 20%;
     }
   }
-  
 }
 
 //small pc
@@ -682,12 +705,24 @@ img{
       font-size: 45px;
     }
   }
+  .categories{
+
+  }
+  .categories {
+    ul {
+      gap: 50px;
+      li{
+        font-size: 16px;
+      }
+    }
+  }
 
   .content {
     .list {
       gap: 15px;
 
       .item {
+        width: calc(25% - 15px);
         .name {
           font-size: 18px;
         }
