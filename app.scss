@@ -64,6 +64,9 @@ img {
     cursor: pointer;
   }
 }
+a:hover{
+  opacity: 0.6;
+}
 .d-flex {
   display: flex;
 }
@@ -345,6 +348,13 @@ img {
       font-weight: 500;
       font-size: 18px;
       line-height: 28px;
+      &:hover{
+        opacity: 0.8;
+      }
+      transition: 0.2s ease;
+    }
+    .more:hover{
+      opacity: 0.8;
     }
   }
 
@@ -352,6 +362,10 @@ img {
     display: flex;
     align-items: center;
     gap: 15px;
+    img{
+      width: 30px;
+      height: 30px;
+    }
     p {
       font-weight: 600;
       font-size: 25px;
@@ -367,11 +381,16 @@ img {
     img {
       object-fit: cover;
       max-width: 100%;
+     
     }
     p {
       font-size: 14px;
       text-align: center;
     }
+  }
+  img{
+    height: 110px;
+    object-fit: contain;
   }
 }
 
@@ -642,7 +661,11 @@ img {
       font-size: 18px;
     }
     .more {
+      &:hover{
+        opacity: 0.8;
+      }
       font-size: 18px;
+      transition: 0.2s ease;
     }
   }
   .content {
