@@ -295,7 +295,10 @@ a:hover {
   left: 0;
   width: 140px;
   display: flex;
+  visibility: hidden;
   opacity: 0;
+  border-radius: 8px;
+  z-index: -99;
   flex-direction: column;
   z-index: 0;
   font-weight: 400;
@@ -310,13 +313,17 @@ a:hover {
   color: #555;
   padding: 5px 0px;
   width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
+  padding-left: 50px;
 }
 .categories ul .dropdown:hover .sub-dropdown {
   z-index: 99;
   opacity: 1;
+  visibility: unset;
 }
+.inactive {
+  color: #CFE8B0;
+}
+
 .top-product {
   padding: 45px 0;
   background-color: #cfe8b0;
