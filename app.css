@@ -152,23 +152,20 @@ img {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 5%;
-  left: 70%;
-  width: 100%;
+  left: 63.4%;
 }
 .banner .bamboo-right-img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 100%;
 }
 .banner .bamboo-right-rec {
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
   left: 0;
   bottom: 0;
   top: 0;
   position: absolute;
-  object-fit: cover;
 }
 
 .header {
@@ -180,13 +177,14 @@ img {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .header .search-bar {
   display: flex;
+  margin-left: 72px;
+  margin-right: 90px;
   align-items: center;
   gap: 15px;
-  width: 50%;
+  flex: 1;
   height: 100%;
 }
 .header .search-bar input {
@@ -269,10 +267,14 @@ img {
 .categories ul .dropdown {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   position: relative;
   cursor: pointer;
   z-index: 99;
+}
+.categories ul .dropdown i {
+  font-size: 8px;
+  color: #959EAD;
 }
 .categories ul .dropdown .sub-dropdown {
   position: absolute;
@@ -362,7 +364,7 @@ img {
   gap: 20px;
   max-width: 33.3333%;
 }
-.footer .left .footer-text {
+.footer .footer-text {
   margin-left: 10px;
   color: #727272;
   font-size: 14px;
@@ -412,8 +414,11 @@ img {
   border-radius: 8px;
   background-color: #fff;
   align-items: center;
-  justify-content: space-between;
   font-size: 18px;
+  gap: 4px;
+}
+.footer .returns-link {
+  justify-content: space-between;
 }
 .footer .returns img {
   margin-top: 12px;
@@ -538,13 +543,13 @@ img {
     font-size: 12px;
   }
   .banner {
-    height: 122px;
+    height: 100px;
     /* .bamboo-right {
       left: 300px;
     } */
   }
   .banner-heading {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 30px;
   }
   .header .container {
@@ -657,7 +662,7 @@ img {
   }
   .banner-heading {
     margin-left: 84px;
-    font-size: 35px;
+    font-size: 33px;
   }
   .categories ul {
     gap: 15px;
@@ -695,7 +700,10 @@ img {
   .footer .returns p {
     font-size: 16px;
   }
-  .footer .left .footer-text {
+  .footer .returns-visit .text, .footer .returns-link .text {
+    font-size: 14px;
+  }
+  .footer .footer-text {
     max-width: 200px;
   }
   .section-title h1 {
