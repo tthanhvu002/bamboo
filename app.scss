@@ -326,7 +326,10 @@ img {
 
     .more {
       font-size: 18px;
-      color: #000;
+      color: #395319;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
     }
   }
 
@@ -452,7 +455,6 @@ img {
       width: calc(20% - 33px);
       position: relative;
       .sale {
-          
         display: flex;
         justify-content: center;
         align-items: center;
@@ -480,7 +482,7 @@ img {
         line-height: 28px;
       }
       .prices {
-        justify-content: space-between;
+        gap: 8px;
         margin-top: 8px;
         display: flex;
         align-items: center;
@@ -787,7 +789,7 @@ img {
   }
   .section-title {
     h1 {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
@@ -806,11 +808,9 @@ img {
 
       .item {
         position: relative;
-        
-       
-        width: calc(25% - 15px);
-        .sale{
 
+        width: calc(25% - 15px);
+        .sale {
         }
         .name {
           font-size: 18px;
