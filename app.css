@@ -226,6 +226,14 @@ img {
   font-size: 18px;
   border-radius: 8px;
   color: #fff;
+  width: 99px;
+  height: 40px;
+  /* Primary/02 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8bc63f;
+  border-radius: 8px;
 }
 .header .btns-wrap .cart-btn {
   cursor: pointer;
@@ -274,7 +282,7 @@ img {
 }
 .categories ul .dropdown i {
   font-size: 8px;
-  color: #959EAD;
+  color: #959ead;
 }
 .categories ul .dropdown .sub-dropdown {
   position: absolute;
@@ -282,21 +290,25 @@ img {
   transition: 0.2s ease;
   height: fit-content;
   left: 0;
-  width: 150px;
+  width: 140px;
   display: flex;
   opacity: 0;
   flex-direction: column;
   z-index: 0;
-  font-size: 12px;
   font-weight: 400;
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 20px 10px;
-  padding-right: 30px;
+  padding: 20px 0px;
   gap: 10px;
 }
 .categories ul .dropdown .sub-dropdown li {
+  font-weight: 400;
+  font-size: 13px;
+  color: #555;
+  padding: 5px 0px;
   width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
 }
 .categories ul .dropdown:hover .sub-dropdown {
   z-index: 99;
@@ -365,7 +377,6 @@ img {
   max-width: 33.3333%;
 }
 .footer .footer-text {
-  margin-left: 10px;
   color: #727272;
   font-size: 14px;
   max-width: 365px;
@@ -527,20 +538,30 @@ img {
 
 /* mobile */
 @media screen and (max-width: 767.98px) {
+  .header .btns-wrap .sign-up-btn {
+    width: 80px;
+  }
   .pre-header-contact {
-    flex-direction: column;
     display: flex;
-    align-items: unset;
     gap: 5px;
+    align-items: center;
   }
   .pre-header-contact .text {
-    font-size: 12px;
+    font-size: 8px;
+  }
+  .pre-header-contact img {
+    width: 15px;
+    font-size: 10px;
   }
   .pre-header .select-language-btn {
     width: 140px;
   }
   .pre-header .select-language-btn .text {
     font-size: 12px;
+  }
+  .pre-header .container {
+    flex-direction: column;
+    gap: 16px;
   }
   .banner {
     height: 100px;
@@ -549,7 +570,7 @@ img {
     } */
   }
   .banner-heading {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 30px;
   }
   .header .container {
