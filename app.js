@@ -38,3 +38,9 @@ function setColorBtn(){
   }
 }
 setColorBtn()
+
+const mobileCateBtn = document.querySelector('.mobile-cate-btn')
+const mobileCate = document.querySelector('.mobile-categories')
+mobileCateBtn.onclick = () => {
+  mobileCate.classList.toggle('active')
+}
