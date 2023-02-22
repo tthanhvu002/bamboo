@@ -393,6 +393,7 @@ a:hover {
   width: 66.66667%;
   display: flex;
   justify-content: space-between;
+  gap: 6px;
 }
 .footer .left {
   display: flex;
@@ -646,10 +647,16 @@ a:hover {
     font-size: 21px;
   }
   .top-product .top-product-list {
+    flex-wrap: nowrap;
+    overflow: scroll;
     gap: 3px;
   }
   .top-product .top-product-list p {
     font-size: 9px;
+  }
+  .top-product .top-product-list .top-product-item {
+    flex: none;
+    width: 30%;
   }
   .footer .container {
     display: flex;
