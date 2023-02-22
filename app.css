@@ -811,11 +811,14 @@ a:hover {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .header .search-bar .search-icon {
+    width: 62px;
+  }
   .header .btns-wrap .sign-in-btn, .header .btns-wrap .sign-up-btn {
     font-size: 16px;
   }
   .header .btns-wrap .sign-up-btn {
-    width: 77px;
+    width: 70px;
   }
   .content .list {
     gap: 25px;

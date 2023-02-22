@@ -892,13 +892,16 @@ a:hover{
       gap: 8px;
       margin-left: 10px;
       margin-right: 10px;
+      .search-icon{
+        width: 62px;
+      }
     }
     .btns-wrap{
       .sign-in-btn, .sign-up-btn{
         font-size: 16px;
       }
       .sign-up-btn{
-        width: 77px;
+        width: 70px;
       }
     }
   }
