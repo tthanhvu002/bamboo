@@ -762,6 +762,9 @@ a:hover {
   .footer .footer-text {
     max-width: 200px;
   }
+  .section-title {
+    margin-top: 37px;
+  }
   .section-title h1 {
     font-size: 20px;
   }
