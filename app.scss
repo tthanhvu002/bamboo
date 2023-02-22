@@ -595,12 +595,18 @@ a:hover{
 .mobile-categories{
   display: none;
 }
-
+.mobile-cate-btn{
+  display: none;
+}
 //pc
 
 /* mobile */
 
 @media screen and (max-width: 767.98px) {
+  .mobile-cate-btn{
+    display: block;
+    margin-top: 20px;
+  }
   .mobile-categories{
     display: block;
     position: relative;
