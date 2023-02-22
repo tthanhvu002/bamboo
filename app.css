@@ -605,7 +605,7 @@ a:hover {
   }
   .categories .container ul {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 33px;
     justify-content: center;
   }
   .slider .item {
@@ -638,7 +638,16 @@ a:hover {
   .content .list .item .name {
     font-size: 15px;
   }
-  .top-product-list p {
+  .top-product .top-product-title {
+    gap: 5px;
+  }
+  .top-product .top-product-title p {
+    font-size: 21px;
+  }
+  .top-product .top-product-list {
+    gap: 3px;
+  }
+  .top-product .top-product-list p {
     font-size: 9px;
   }
   .footer .container {
@@ -655,10 +664,19 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer .container .logo-list img {
+    width: 50px;
+  }
+  .footer .container .logo-2 {
+    width: 70px;
+  }
   .footer .container .right {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .footer .container .right .dangky-img {
+    width: 200px;
   }
   .footer .container .d-flex {
     width: 100%;
@@ -690,7 +708,8 @@ a:hover {
     margin-right: 30px;
   }
   .content .list {
-    gap: 5px;
+    gap: 25px;
+    column-gap: 10px;
     justify-content: space-between;
   }
   .content .list .item {
@@ -707,11 +726,13 @@ a:hover {
   }
   .top-product-list {
     flex-wrap: wrap;
+    gap: 10px;
   }
   .top-product-list .top-product-item {
     width: 20%;
   }
   .banner {
+    height: 175px;
     /* .bamboo-right{
         left: 580px;
     } */
@@ -728,6 +749,9 @@ a:hover {
   }
   .slider .item .name {
     font-size: 14px;
+  }
+  .footer .flex-column {
+    align-items: center;
   }
   .footer .container {
     display: flex;

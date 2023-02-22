@@ -651,7 +651,7 @@ a:hover{
     .container {
       ul {
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 33px;
         justify-content: center;
       }
     }
@@ -692,12 +692,22 @@ a:hover{
       }
     }
   }
-
-  .top-product-list {
-    p {
-      font-size: 9px;
+  .top-product{
+    .top-product-title{
+      gap: 5px;
+      p{
+        font-size: 21px;
+      }
+    }
+    .top-product-list {
+      gap: 3px;
+      p {
+        font-size: 9px;
+      }
+     
     }
   }
+  
   .footer {
     .container {
       display: flex;
@@ -710,12 +720,22 @@ a:hover{
       }
       .logo-list {
         flex-wrap: wrap;
+
         justify-content: center;
+        img{
+          width: 50px;
+        }
+      }
+      .logo-2{
+        width: 70px;
       }
       .right {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        .dangky-img{
+          width: 200px;
+        }
       }
       .d-flex {
         width: 100%;
@@ -765,7 +785,8 @@ a:hover{
   }
   .content {
     .list {
-      gap: 5px;
+      gap: 25px;
+      column-gap: 10px;
       justify-content: space-between;
       .item {
         width: calc(25% - 10px);
@@ -784,11 +805,13 @@ a:hover{
 
   .top-product-list {
     flex-wrap: wrap;
+    gap: 10px;
     .top-product-item {
       width: 20%;
     }
   }
   .banner {
+    height: 175px;
     &-heading {
       margin-left: 84px;
       font-size: 33px;
@@ -813,6 +836,9 @@ a:hover{
     }
   }
   .footer {
+    .flex-column{
+      align-items: center;
+    }
     .container {
       display: flex;
       flex-direction: column;
