@@ -571,6 +571,12 @@ a:hover {
 
 /* mobile */
 @media screen and (max-width: 767.98px) {
+  .pre-header-contact .text {
+    font-size: 10px;
+  }
+  .pre-header-contact .select-language-btn .text {
+    font-size: 10px;
+  }
   .mobile-cate-btn {
     display: block;
     margin-top: 20px;
@@ -660,7 +666,6 @@ a:hover {
   .pre-header-contact {
     display: flex;
     gap: 5px;
-    align-items: center;
   }
   .pre-header-contact .text {
     font-size: 8px;
@@ -670,14 +675,18 @@ a:hover {
     font-size: 10px;
   }
   .pre-header .select-language-btn {
-    width: 140px;
+    padding: 5px;
+    width: 100px;
+  }
+  .pre-header .select-language-btn img {
+    width: 20px;
+    height: 20px;
   }
   .pre-header .select-language-btn .text {
-    font-size: 12px;
+    font-size: 6px;
   }
-  .pre-header .container {
-    flex-direction: column;
-    gap: 16px;
+  .pre-header .select-language-btn .text i {
+    font-size: 6px;
   }
   .banner {
     height: 100px;
@@ -802,17 +811,19 @@ a:hover {
     padding: 16px 20px;
   }
   .section-title h1 {
-    font-size: 18px;
+    font-size: 14px;
   }
   .section-title .more {
-    font-size: 18px;
+    font-size: 14px;
   }
   .header .btns-wrap {
     gap: 18px;
   }
-  .pre-header .container {
-    flex-direction: column;
-    gap: 20px;
+  .pre-header-contact .text {
+    font-size: 10px;
+  }
+  .pre-header-contact .select-language-btn .text {
+    font-size: 10px;
   }
   .header .logo {
     width: 50px;
@@ -917,7 +928,10 @@ a:hover {
     margin-top: 37px;
   }
   .section-title h1 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .section-title .more {
+    font-size: 18px;
   }
   .categories ul {
     gap: 40px;

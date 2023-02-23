@@ -603,6 +603,20 @@ a:hover{
 /* mobile */
 
 @media screen and (max-width: 767.98px) {
+  .pre-header{
+    .container{
+    }
+    &-contact{
+      .text{
+        font-size: 10px;
+      }
+      .select-language-btn{
+        .text{
+          font-size: 10px;
+        }
+      }
+    }
+  }
   .mobile-cate-btn{
     display: block;
     margin-top: 20px;
@@ -704,7 +718,6 @@ a:hover{
     &-contact {
       display: flex;
       gap: 5px;
-      align-items: center;
       .text {
         font-size: 8px;
       }
@@ -715,14 +728,21 @@ a:hover{
     }
     
     .select-language-btn {
-      width: 140px;
+      padding: 5px;
+      width: 100px;
+      img{
+        width: 20px;
+        height: 20px;
+      }
       .text {
-        font-size: 12px;
+        font-size: 6px;
+        i{
+          font-size: 6px;
+
+        }
       }
     }
     .container {
-      flex-direction: column;
-      gap: 16px;
     }
   }
   .banner {
@@ -877,10 +897,10 @@ a:hover{
   .section-title {
     padding: 16px 20px;
     h1 {
-      font-size: 18px;
+      font-size: 14px;
     }
     .more {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
   .header {
@@ -890,8 +910,16 @@ a:hover{
   }
   .pre-header{
     .container{
-      flex-direction: column;
-      gap: 20px;
+    }
+    &-contact{
+      .text{
+        font-size: 10px;
+      }
+      .select-language-btn{
+        .text{
+          font-size: 10px;
+        }
+      }
     }
   }
   .header{
@@ -1031,7 +1059,10 @@ a:hover{
   .section-title {
     margin-top: 37px;
     h1 {
-      font-size: 20px;
+      font-size: 18px;
+    }
+    .more{
+      font-size: 18px;
     }
   }
 
