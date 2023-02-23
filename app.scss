@@ -821,6 +821,9 @@ a:hover{
   }
   
   .footer {
+    .footer-text{
+      font-size: 12px;
+    }
     .container {
       display: flex;
       flex-direction: column;
@@ -867,6 +870,7 @@ a:hover{
     }
   }
 }
+
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -979,6 +983,9 @@ a:hover{
         max-width: 100%;
         width: 100%;
       }
+    }
+    .footer-text{
+      font-size: 12px;
     }
   }
 }
