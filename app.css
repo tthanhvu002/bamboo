@@ -665,17 +665,17 @@ a:hover {
   }
   .pre-header-contact {
     display: flex;
-    gap: 5px;
+    gap: 3px;
   }
   .pre-header-contact .text {
-    font-size: 8px;
+    font-size: 5px;
   }
   .pre-header-contact img {
     width: 15px;
     font-size: 10px;
   }
   .pre-header .select-language-btn {
-    padding: 5px;
+    padding: 3px;
     width: 100px;
   }
   .pre-header .select-language-btn img {
@@ -683,10 +683,10 @@ a:hover {
     height: 20px;
   }
   .pre-header .select-language-btn .text {
-    font-size: 6px;
+    font-size: 5px;
   }
   .pre-header .select-language-btn .text i {
-    font-size: 6px;
+    font-size: 5px;
   }
   .banner {
     height: 100px;
