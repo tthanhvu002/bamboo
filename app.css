@@ -903,6 +903,10 @@ a:hover {
   .content .list .item {
     width: calc(32% - 10px);
   }
+  .content .list .item img {
+    max-height: 400px;
+    object-fit: cover;
+  }
   .content .list .item .sale {
     font-size: 12px;
     width: 44px;

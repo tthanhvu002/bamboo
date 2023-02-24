@@ -1002,6 +1002,10 @@ a:hover{
       justify-content: space-between;
       .item {
         width: calc(32% - 10px);
+        img{
+          max-height: 400px;
+          object-fit: cover;
+        }
         .sale{
           font-size: 12px;
           width: 44px;
