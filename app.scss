@@ -723,8 +723,14 @@ a:hover{
   }
   .header{
     .btns-wrap{
+      align-items: center;
       .sign-up-btn{
         width: 80px;
+        height: 32px;
+
+      }
+      .sign-in-btn,.sign-up-btn{
+        font-size: 14px;
       }
     }
   }
