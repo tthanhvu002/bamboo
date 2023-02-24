@@ -44,3 +44,9 @@ const mobileCate = document.querySelector('.mobile-categories')
 mobileCateBtn.onclick = () => {
   mobileCate.classList.toggle('active')
 }
+
+
+const items = document.querySelectorAll('.list .item:nth-child(4n)')
+items.forEach(item => {
+  item.classList.add('width-100')
+})

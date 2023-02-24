@@ -277,6 +277,7 @@ a:hover {
   line-height: 24px;
 }
 .categories ul .dropdown {
+  user-select: none;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -327,7 +328,7 @@ a:hover {
 
 .top-product {
   padding: 45px 0;
-  background-color: #cfe8b0;
+  background: rgba(207, 232, 176, 0.17);
   margin-bottom: 87px;
 }
 .top-product .top-product-head {
@@ -349,6 +350,12 @@ a:hover {
 }
 .top-product .top-product-head .more:hover {
   opacity: 0.8;
+}
+.top-product-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .top-product-title {
   display: flex;
@@ -458,6 +465,7 @@ a:hover {
 }
 .footer .returns img {
   margin-top: 12px;
+  transform: translateX(6px);
 }
 
 .content .list {
@@ -540,7 +548,7 @@ a:hover {
   scroll-behavior: smooth;
 }
 .slider .item {
-  width: 15%;
+  width: 20%;
   flex: none;
 }
 .slider .item .name {
@@ -571,6 +579,9 @@ a:hover {
 
 /* mobile */
 @media screen and (max-width: 767.98px) {
+  .slider {
+    margin-top: 16px;
+  }
   .pre-header-contact .text {
     font-size: 10px;
   }
@@ -594,7 +605,7 @@ a:hover {
   }
   .mobile-categories ul {
     z-index: 9;
-    top: 40px;
+    top: 20px;
     position: absolute;
     visibility: unset;
     display: flex;
@@ -656,6 +667,7 @@ a:hover {
   }
   .categories {
     display: none;
+    padding: 10px 0;
   }
   .section-title {
     padding: 12px 16px;
@@ -671,16 +683,16 @@ a:hover {
     font-size: 5px;
   }
   .pre-header-contact img {
-    width: 15px;
+    width: 10px;
     font-size: 10px;
   }
   .pre-header .select-language-btn {
     padding: 3px;
-    width: 100px;
+    width: 80px;
   }
   .pre-header .select-language-btn img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
   .pre-header .select-language-btn .text {
     font-size: 5px;
@@ -713,26 +725,40 @@ a:hover {
     gap: 33px;
     justify-content: center;
   }
+  .slider {
+    margin-bottom: 40px;
+  }
   .slider .item {
-    width: 30%;
+    width: 40%;
+  }
+  .section-title {
+    margin-top: 20px;
   }
   .section-title h1 {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 22px;
   }
   .section-title .more {
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.2s ease;
   }
   .section-title .more:hover {
     opacity: 0.8;
   }
   .content .list {
+    margin-bottom: 40px;
     gap: 20px;
     column-gap: 20px;
     justify-content: space-between;
+    margin-top: 16px;
   }
   .content .list .item {
     width: 45%;
+  }
+  .content .list .item .sale {
+    font-size: 8px;
+    width: 32px;
+    height: 20px;
   }
   .content .list .item .price {
     font-size: 10px;
@@ -747,7 +773,7 @@ a:hover {
     gap: 5px;
   }
   .top-product .top-product-title p {
-    font-size: 21px;
+    font-size: 18px;
   }
   .top-product .top-product-list {
     flex-wrap: nowrap;
@@ -805,10 +831,21 @@ a:hover {
     font-size: 10px;
   }
 }
+.width-100 {
+  width: unset;
+}
+
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .width-100 {
+    width: 100% !important;
+  }
+  .top-product .top-product-title p {
+    font-size: 20px;
+  }
   .section-title {
     padding: 16px 20px;
+    margin-top: 25px;
   }
   .section-title h1 {
     font-size: 14px;
@@ -842,13 +879,27 @@ a:hover {
   .header .btns-wrap .sign-up-btn {
     width: 70px;
   }
+  .categories {
+    padding: 18px 0;
+  }
+  .slider {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
   .content .list {
+    margin-bottom: 50px;
+    margin-top: 25px;
     gap: 25px;
     column-gap: 10px;
     justify-content: space-between;
   }
   .content .list .item {
-    width: calc(25% - 10px);
+    width: calc(32% - 10px);
+  }
+  .content .list .item .sale {
+    font-size: 12px;
+    width: 44px;
+    height: 29px;
   }
   .content .list .item .price {
     font-size: 12px;
@@ -888,6 +939,9 @@ a:hover {
   .footer .flex-column {
     align-items: center;
   }
+  .footer .returns p {
+    font-size: 13px;
+  }
   .footer .container {
     display: flex;
     flex-direction: column;
@@ -911,6 +965,11 @@ a:hover {
     width: 20%;
   }
 }
+.item.only-pc {
+  width: 100%;
+  flex: 1;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .banner-heading {
     font-size: 45px;
@@ -918,8 +977,11 @@ a:hover {
   .footer .returns p {
     font-size: 16px;
   }
+  .footer .returns-visit, .footer .returns-link {
+    padding: 8px 10px;
+  }
   .footer .returns-visit .text, .footer .returns-link .text {
-    font-size: 14px;
+    font-size: 11px;
   }
   .footer .footer-text {
     max-width: 200px;
