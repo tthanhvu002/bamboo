@@ -32,7 +32,7 @@ img {
   position: relative;
 }
 
-.container {
+.container-al {
   padding: 0 8.8%;
 }
 
@@ -93,7 +93,7 @@ a:hover {
   padding: 10px 0;
   background-color: #f3f4f4;
 }
-.pre-header .container {
+.pre-header .container-al {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -178,7 +178,7 @@ a:hover {
   padding: 16px 0;
   border-bottom: 1px solid #f3f4f4;
 }
-.header .container {
+.header .container-al {
   display: flex;
   align-items: center;
 }
@@ -231,7 +231,6 @@ a:hover {
   border-radius: 8px;
   color: #fff;
   width: 99px;
-  height: 20px;
   /* Primary/02 */
   display: flex;
   justify-content: center;
@@ -323,7 +322,7 @@ a:hover {
   visibility: unset;
 }
 .inactive {
-  color: #CFE8B0;
+  color: #cfe8b0;
 }
 
 .top-product {
@@ -392,7 +391,7 @@ a:hover {
   padding: 36px 0 41px;
   background-color: #f3f4f4;
 }
-.footer .container {
+.footer .container-al {
   display: flex;
   justify-content: space-between;
 }
@@ -677,9 +676,10 @@ a:hover {
   }
   .header .btns-wrap .sign-up-btn {
     width: 80px;
-    height: 32px;
+    height: 20px;
   }
-  .header .btns-wrap .sign-in-btn, .header .btns-wrap .sign-up-btn {
+  .header .btns-wrap .sign-in-btn,
+.header .btns-wrap .sign-up-btn {
     font-size: 14px;
   }
   .pre-header-contact {
@@ -720,14 +720,14 @@ a:hover {
   .categories ul li {
     font-size: 15px;
   }
-  .header .container {
+  .header .container-al {
     flex-direction: column;
     gap: 20px;
   }
   .header .search-bar {
     width: 100%;
   }
-  .categories .container ul {
+  .categories .container-al ul {
     flex-wrap: wrap;
     gap: 33px;
     justify-content: center;
@@ -800,35 +800,35 @@ a:hover {
   .footer .footer-text {
     font-size: 12px;
   }
-  .footer .container {
+  .footer .container-al {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .footer .container .left,
-.footer .container .right {
+  .footer .container-al .left,
+.footer .container-al .right {
     width: 100%;
     max-width: 100%;
   }
-  .footer .container .logo-list {
+  .footer .container-al .logo-list {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .footer .container .logo-list img {
+  .footer .container-al .logo-list img {
     width: 50px;
   }
-  .footer .container .logo-2 {
+  .footer .container-al .logo-2 {
     width: 70px;
   }
-  .footer .container .right {
+  .footer .container-al .right {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .footer .container .right .dangky-img {
+  .footer .container-al .right .dangky-img {
     width: 200px;
   }
-  .footer .container .d-flex {
+  .footer .container-al .d-flex {
     width: 100%;
   }
   .categories ul {
@@ -851,7 +851,7 @@ a:hover {
     font-size: 20px;
   }
   .section-title {
-    padding: 16px 20px;
+    padding: 10px 20px;
     margin-top: 25px;
   }
   .section-title h1 {
@@ -863,8 +863,14 @@ a:hover {
   .header .btns-wrap {
     gap: 18px;
   }
+  .pre-header-contact {
+    gap: 10px;
+  }
   .pre-header-contact .text {
     font-size: 10px;
+  }
+  .pre-header-contact .select-language-btn {
+    width: 200px;
   }
   .pre-header-contact .select-language-btn .text {
     font-size: 10px;
@@ -880,8 +886,10 @@ a:hover {
   .header .search-bar .search-icon {
     width: 62px;
   }
-  .header .btns-wrap .sign-in-btn, .header .btns-wrap .sign-up-btn {
-    font-size: 16px;
+  .header .btns-wrap .sign-in-btn,
+.header .btns-wrap .sign-up-btn {
+    font-size: 13px;
+    padding: 6px;
   }
   .header .btns-wrap .sign-up-btn {
     width: 70px;
@@ -939,10 +947,10 @@ a:hover {
     font-size: 33px;
   }
   .categories ul {
-    gap: 15px;
+    gap: 8px;
   }
   .categories ul li {
-    font-size: 13px;
+    font-size: 12px;
   }
   .slider .item .name {
     font-size: 14px;
@@ -953,13 +961,13 @@ a:hover {
   .footer .returns p {
     font-size: 13px;
   }
-  .footer .container {
+  .footer .container-al {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .footer .container .left,
-.footer .container .right {
+  .footer .container-al .left,
+.footer .container-al .right {
     max-width: 100%;
     width: 100%;
   }
@@ -985,6 +993,12 @@ a:hover {
   .banner-heading {
     font-size: 45px;
   }
+  .categories ul {
+    gap: 30px;
+  }
+  .categories ul li {
+    font-size: 16px;
+  }
   .footer .returns p {
     font-size: 16px;
   }
@@ -1005,12 +1019,6 @@ a:hover {
   }
   .section-title .more {
     font-size: 18px;
-  }
-  .categories ul {
-    gap: 40px;
-  }
-  .categories ul li {
-    font-size: 17px;
   }
   .content .list {
     gap: 15px;
